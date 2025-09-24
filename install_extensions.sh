@@ -3,7 +3,7 @@
 # This script installs Cursor extensions listed in the extensions.list file.
 
 DOTFILES_DIR="$HOME/repos/dotfiles"
-EXTENSIONS_LIST_FILE="extensions.list"
+EXTENSIONS_LIST_FILE="${1:-extensions.list}"
 
 echo "Processing $EXTENSIONS_LIST_FILE..."
 EXTENSIONS_PATH="$DOTFILES_DIR/$EXTENSIONS_LIST_FILE"
@@ -23,7 +23,7 @@ if [ -f "$EXTENSIONS_PATH" ]; then
     fi
   done < "$EXTENSIONS_PATH"
 else
-  echo "Error: extensions.list not found at $EXTENSIONS_PATH."
+  echo "Error: $EXTENSIONS_LIST_FILE not found at $EXTENSIONS_PATH."
   echo "Skipping extension installation. Please create the file if you wish to install extensions automatically."
 fi
 
