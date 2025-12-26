@@ -1,6 +1,8 @@
 anysphere.cursorpyright
 anysphere.remote-containers
+bierner.markdown-mermaid
 docker.docker
+mechatroner.rainbow-csv
 mermaidchart.vscode-mermaid-chart
 ms-azuretools.vscode-containers
 ms-azuretools.vscode-docker
@@ -9,6 +11,8 @@ ms-python.python
 ms-vscode.powershell
 redhat.java
 redhat.vscode-yaml
+scala-lang.scala
+scalameta.metals
 shd101wyy.markdown-preview-enhanced
 uctakeoff.vscode-counter
 vscjava.vscode-gradle
